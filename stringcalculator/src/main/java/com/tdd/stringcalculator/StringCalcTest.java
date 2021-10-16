@@ -47,5 +47,17 @@ public class StringCalcTest {
         StringCalcImpl sut = new StringCalcImpl();
         assertEquals(10, sut.calculate(";\n1;2;3;4"));
     }
+	
+	@Test
+    public void negativeNotSupported() {
+        StringCalcImpl sut = new StringCalcImpl();
+        try {
+            sut.calculate("-1");
+            fail("exception should have been thrown");
+        }
+        catch (IllegalArgumentException e) {
+            assertEquals("negatives not allowed -1", e.getMessage());
+        }
+    }
 
 }
