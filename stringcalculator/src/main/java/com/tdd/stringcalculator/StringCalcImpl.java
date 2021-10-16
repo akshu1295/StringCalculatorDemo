@@ -19,7 +19,8 @@ public class StringCalcImpl {
         for (String item : chuncks) {
             if (skipFirstLines > 0) {
                 --skipFirstLines;
-            } else {
+            } 
+            else {
                 int num = Integer.parseInt(item);
                 if (num < 0) {
                     negatives.add(item);

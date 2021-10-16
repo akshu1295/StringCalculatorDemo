@@ -23,5 +23,11 @@ public class StringCalcTest {
         StringCalcImpl sut = new StringCalcImpl();
         assertEquals(7, sut.calculate("2,5"));
     }
+	
+	@Test
+    public void moreDigitsSupported() {
+        StringCalcImpl sut = new StringCalcImpl();
+        assertEquals(77, sut.calculate("22,55"));
+    }
 
 }
