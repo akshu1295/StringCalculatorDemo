@@ -35,5 +35,11 @@ public class StringCalcTest {
         StringCalcImpl sut = new StringCalcImpl();
         assertEquals(45, sut.calculate("1,2,3,4,5,6,7,8,9"));
     }
+	
+	@Test
+	public void supportNewLineAsSeparator() {
+        StringCalcImpl sut = new StringCalcImpl();
+        assertEquals(6, sut.calculate("1\n2,3"));
+    }
 
 }
