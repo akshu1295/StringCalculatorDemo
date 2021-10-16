@@ -5,7 +5,6 @@
   <groupId>com.tdd</groupId>
   <artifactId>stringcalculator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <relativePath>../stringcalculator</relativePath>
   <packaging>jar</packaging>
 
   <name>stringcalculator</name>
