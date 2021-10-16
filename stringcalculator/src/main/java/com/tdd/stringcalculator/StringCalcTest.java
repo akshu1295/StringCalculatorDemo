@@ -41,5 +41,11 @@ public class StringCalcTest {
         StringCalcImpl sut = new StringCalcImpl();
         assertEquals(6, sut.calculate("1\n2,3"));
     }
+	
+	@Test
+    public void supportForCustomDelimiter() {
+        StringCalcImpl sut = new StringCalcImpl();
+        assertEquals(10, sut.calculate(";\n1;2;3;4"));
+    }
 
 }
