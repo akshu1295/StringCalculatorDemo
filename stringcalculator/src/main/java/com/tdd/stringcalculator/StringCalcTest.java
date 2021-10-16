@@ -17,5 +17,11 @@ public class StringCalcTest {
         StringCalcImpl sut = new StringCalcImpl();
         assertEquals(3, sut.calculate("3"));
     }
+	
+	@Test
+    public void twoNumbersShouldBeAdded() {
+        StringCalcImpl sut = new StringCalcImpl();
+        assertEquals(7, sut.calculate("2,5"));
+    }
 
 }
